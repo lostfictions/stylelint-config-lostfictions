@@ -4,7 +4,7 @@ const pattern = require('./css-variables.js');
 function configuration(options) {
   return Object.assign({
     config: {
-      plugins: ['./css-variables.js'],
+      plugins: [require.resolve('./css-variables.js')],
       rules: {
         'css-modules/css-variables': [true, {}],
       },

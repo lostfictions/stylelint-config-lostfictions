@@ -4,7 +4,7 @@ const pattern = require('./composed-class-names.js');
 function configuration(options) {
   return Object.assign({
     config: {
-      plugins: ['./composed-class-names.js'],
+      plugins: [require.resolve('./composed-class-names.js')],
       rules: {
         'css-modules/composed-class-names': [true, {}],
       },
