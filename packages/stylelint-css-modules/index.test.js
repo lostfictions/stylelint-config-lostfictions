@@ -1,5 +1,5 @@
-const index = require('./index.js');
+const index = require("./index.js");
 
-test('index file has correct synax', () => {
+test("index file has correct synax", () => {
   expect(index.length).toEqual(2);
 });
